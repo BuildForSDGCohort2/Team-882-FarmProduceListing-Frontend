@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const ListingForm = (props) => {
   const [formData, setFormData] = useState({
     produce_type: 'Plant Produce',
-    price: '$0+',
+    price: 'N0+',
     quantity: '0+',
     produce_state_type: 'Fresh',
     weight: '0+',
@@ -121,14 +121,14 @@ const ListingForm = (props) => {
               onChange={(e) => onChange(e)}
               value={price}
             >
-              <option>$0+</option>
-              <option>$200,000+</option>
-              <option>$400,000+</option>
-              <option>$600,000+</option>
-              <option>$800,000+</option>
-              <option>$1,000,000+</option>
-              <option>$1,200,000+</option>
-              <option>$1,500,000+</option>
+              <option>N0+</option>
+              <option>N200,000+</option>
+              <option>N400,000+</option>
+              <option>N600,000+</option>
+              <option>N800,000+</option>
+              <option>N1,000,000+</option>
+              <option>N1,200,000+</option>
+              <option>N1,500,000+</option>
               <option>Any</option>
             </select>
           </div>
@@ -240,7 +240,7 @@ const ListingForm = (props) => {
           </div>
           <div className='listingform__altsection'>
             <label className='listingform__label' htmlFor='in_stock'>
-              Available in Stcok
+              Available in Stock
             </label>
             <input
               className='listingform__checkbox'
@@ -249,6 +249,19 @@ const ListingForm = (props) => {
               onChange={(e) => onChange(e)}
               value={in_stock}
             />
+              <label className='listingform__label' htmlFor='in_stock'>
+              Available in Stock
+            </label>
+            <select
+              className='listingform__select'
+              name='in_stock'
+              onChange={(e) => onChange(e)}
+              value={in_stock}
+            >
+              <option>Yes</option>
+              <option>No</option>
+              
+            </select>
           </div>
         </div>
 
