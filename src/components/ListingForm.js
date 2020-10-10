@@ -249,8 +249,8 @@ const ListingForm = (props) => {
               onChange={(e) => onChange(e)}
               value={in_stock}
             >
-              <option>Yes</option>
               <option>No</option>
+              <option>Yes</option>
               
             </select>
           </div>
