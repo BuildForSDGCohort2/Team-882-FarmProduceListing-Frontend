@@ -239,16 +239,7 @@ const ListingForm = (props) => {
             </select>
           </div>
           <div className='listingform__altsection'>
-            <label className='listingform__label' htmlFor='in_stock'>
-              Available in Stock
-            </label>
-            <input
-              className='listingform__checkbox'
-              name='in_stock'
-              type='checkbox'
-              onChange={(e) => onChange(e)}
-              value={in_stock}
-            />
+            
               <label className='listingform__label' htmlFor='in_stock'>
               Available in Stock
             </label>
